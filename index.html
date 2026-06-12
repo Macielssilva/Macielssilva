@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu Site</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#2563eb;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    background:#1e40af;
+    padding:10px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+    color:white;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:white;
+    color:#2563eb;
+    padding:12px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2rem;
+    }
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Meu Site</h1>
+    <p>Um exemplo de site HTML + CSS</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>Bem-vindo ao Meu Site</h1>
+    <p>Crie páginas modernas e responsivas usando HTML e CSS.</p>
+    <a href="#" class="btn">Saiba Mais</a>
+</section>
+
+<section class="container">
+    <div class="cards">
+        <div class="card">
+            <h3>Design Moderno</h3>
+            <p>Layout limpo e profissional para qualquer projeto.</p>
+        </div>
+
+        <div class="card">
+            <h3>Responsivo</h3>
+            <p>Funciona perfeitamente em celulares, tablets e computadores.</p>
+        </div>
+
+        <div class="card">
+            <h3>Fácil de Editar</h3>
+            <p>Personalize cores, textos e seções rapidamente.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Meu Site - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
